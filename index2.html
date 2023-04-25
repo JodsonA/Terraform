@@ -14,25 +14,44 @@
             font-size: 24px;
 		    font-weight: bold;
 		    text-align: center;
-		    background-color: #000000;
+		    background-color: #FFC107; /* cor laranja */
 		    color: #ffffff;
         }
         .form-group label {
 		    font-weight: bold;
+            color: #FFC107; /* cor laranja */
 	    }
 	    .btn-primary {
-            background-color: #007bff;
-		    border-color: #007bff;
+            background-color: #FFC107; /* cor laranja */
+		    border-color: #FFC107; /* cor laranja */
             display: block;
 			margin: 0 auto;
 	    }
 	    .btn-primary:hover {
-		    background-color: #0069d9;
-		    border-color: #0062cc;
+		    background-color: #FFA000; /* cor laranja mais escura */
+		    border-color: #FFA000; /* cor laranja mais escura */
 	    }
         .btn-secundary {
+            background-color: #007bff; /* cor azul */
+            color: #ffffff;
             display: block;
 			margin: 0 auto;
+	    }
+	    .btn-secundary:hover {
+		    background-color: #0069d9; /* cor azul mais escura */
+		    border-color: #0062cc; /* cor azul mais escura */
+            color: #ffffff;
+	    }
+        .container {
+            background-color: #ffffff; /* cor branca */
+            border: 5px solid #FFC107; /* borda laranja */
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #FFC107; /* cor laranja */
+            color: #ffffff;
+            padding: 20px;
         }
     </style>
 </head>
@@ -60,7 +79,7 @@
         </div>
     </div>
     <p><a href="timesJS.html"><button class="btn-secundary">Entrar</button></a></p>
-    <p><button class="btn-primary" onclick="invokeLambda()">Chamar Função Lambda</button></p>
+    <p><button class="btn-primary" onclick="invokeLambda()">Lambda</button></p>
     <div id="result"></div>
 
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1349.0.min.js"></script>
@@ -92,7 +111,7 @@
 
 <footer class="footer text-center">
     <div class="container">
-      <span class="text-muted">Desenvolvido por Anna Julia, Julio, Renan, Victor e Pazin</a></span>
+      <span class="text-muted">Desenvolvido por Jodson / Marlon (co-participantes: geral da sala)</a></span>
     </div>
 </footer>  
 </html>
